@@ -11,8 +11,6 @@
 	});
 </script>
 
-<h1>Hero FFA Stats</h1>
-
 {#if stats}
 	<pre>{JSON.stringify(stats, null, 2)}</pre>
 {:else}

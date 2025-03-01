@@ -11,7 +11,6 @@
 	<div class="flex space-x-8">
 		<a href="/" class="transition hover:text-cyan-400">Leaderboard</a>
 		<a href="/player" class="transition hover:text-cyan-400">Player</a>
-		<a href="/compare" class="transition hover:text-cyan-400">Compare</a>
 	</div>
 </nav>
 

@@ -96,7 +96,7 @@
 				<br />
 				<img
 					src={`https://starlightskins.lunareclipse.studio/render/archer/${stats.playerName}/full/`}
-					alt="${stats.playerName}'s Skin"
+					alt="{stats.playerName}'s Skin"
 					class="mx-auto"
 					width="384"
 					height="768"
@@ -126,7 +126,7 @@
 				</div>
 				<div class="mt-4 flex items-center justify-center gap-4">
 					<img src="golden_sword.jpg" alt="Sword" class="h-5 w-5" />
-					<p class="text-gray-700">Kills: {stats.killStreak}</p>
+					<p class="text-gray-700">Killstreak: {stats.killStreak}</p>
 				</div>
 				<div class="mt-4 flex items-center justify-center gap-4">
 					<img src="diamond_sword.png" alt="Sword" class="h-5 w-5" />

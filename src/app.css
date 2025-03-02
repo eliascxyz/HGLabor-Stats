@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 body {
 	font-family: 'Press Start 2P', system-ui;
 	font-weight: 400;
@@ -6,4 +7,33 @@ body {
 }
 * {
 	transition: all 0.3s ease-in-out;
+}
+:root {
+	--background: white;
+	--font: black;
+	--secondary-backround: rgb(214, 214, 214);
+}
+.darkmode {
+	--background: black;
+	--font: white;
+	--secondary-backround: rgb(22, 22, 22);
+}
+#theme-switch {
+	height: 50px;
+	width: 50px;
+	padding: 0;
+	border-radius: 50%;
+	background-color: var(--backround);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#theme-switch svg {
+	fill: var(--font);
+}
+#theme-switch svg:last-child {
+	display: none;
+}
+.darkmode #theme-switch svg:first-child {
+	display: block;
 }

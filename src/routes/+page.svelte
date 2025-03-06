@@ -4,7 +4,7 @@
 	let currentPage = 1;
 	let totalPages = 5;
 	let allPlayers = [];
-	let playerNames = {}; // Map zur Speicherung von UUID -> Spielername
+	let playerNames = {};
 	let error = '';
 	let loading = true;
 	let selectedSort = 'kills';
@@ -32,7 +32,7 @@
 	async function fetchPlayerNames(players) {
 		const nameRequests = players.map(async (player) => {
 			const name = await getPlayer(player.playerId);
-			playerNames = { ...playerNames, [player.playerId]: name }; // Map mit neuem Namen aktualisieren
+			playerNames = { ...playerNames, [player.playerId]: name };
 		});
 
 		await Promise.all(nameRequests); // Alle Anfragen parallel abwarten

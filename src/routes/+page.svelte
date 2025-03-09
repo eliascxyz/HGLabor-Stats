@@ -45,8 +45,8 @@
 			const data = await response.json();
 			return data.data.player.username;
 		} catch (err) {
-			console.error('Fehler beim Abrufen des Spielernamens:', err);
-			return 'Unbekannt';
+			console.error('Error fetching Playername:', err);
+			return 'Unknown';
 		}
 	}
 
